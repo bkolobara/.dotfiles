@@ -1,3 +1,11 @@
+" Plugin managment
+" https://github.com/junegunn/vim-plug is used
+call plug#begin('~/.vim/plugged')
+Plug 'nanotech/jellybeans.vim'
+Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
+Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+call plug#end()
+
 " General
 set nocompatible
 set history=700
@@ -23,7 +31,7 @@ set vb
 syntax enable
 set shell=/bin/bash
 set nu
-colo seoul256
+colorscheme jellybeans
 
 " Files, backups and undo
 set nobackup
@@ -41,10 +49,3 @@ set ai "Auto indent
 set wrap
 set si "Smart indent
 
-" Plugin managment
-" https://github.com/junegunn/vim-plug is used
-call plug#begin('~/.vim/plugged')
-Plug 'junegunn/seoul256.vim'
-Plug 'guns/vim-clojure-static', { 'for': 'clojure' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
-call plug#end()
