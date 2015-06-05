@@ -1,0 +1,15 @@
+# Ignore everything
+*
+
+# But not these files
+!.gitignore
+!.vimrc
+
+# Ignoring files inside a folder is harder
+# We need to do it recursively
+!.vim/
+.vim/*
+!.vim/autoload/
+.vim/autoload/*
+!.vim/autoload/plug.vim
+
