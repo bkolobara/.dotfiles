@@ -17,3 +17,7 @@
 .vim/autoload/*
 !.vim/autoload/plug.vim
 
+!apps/
+apps/*
+!apps/lein
+
